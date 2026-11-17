@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Maity — Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PERSISTENT BACKGROUND GLOW -->
+    <div class="ambient-glow-bg"></div>
+
+    <!-- MORPHING LIQUID SLIME CURSOR -->
+    <div class="slime-cursor" id="slime-cursor"></div>
+
+    <!-- TRANSPARENT FROSTED NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <img src="assets/profile.jpg" alt="Rohit Maity" class="nav-avatar">
+                <span>Rohit Maity</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certs">Certifications &amp; Credentials</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#internships">Internships</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO / EXECUTIVE SUMMARY -->
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-media reveal">
+                    <div class="profile-frame">
+                        <img src="assets/profile.jpg" alt="Rohit Maity Profile Picture">
+                    </div>
+                    <!-- SOCIAL ICONS UNDER PROFILE -->
+                    <div class="profile-socials">
+                        <a href="https://github.com/roohitmaity" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rohitmaity/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:rohit.maity.hkr@gmail.com" aria-label="Email" class="social-icon-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                        <a href="https://tryhackme.com/p/rohitmaity" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe" class="social-icon-badge">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-content reveal">
+                    <span class="eyebrow">CYBERSECURITY ANALYST &amp; PENETRATION TESTER</span>
+                    <h1>Securing, Defending modern systems.</h1>
+                    <p class="executive-summary">
+                        M.Sc. Cybersecurity graduate and CEH v12 holder with hands-on experience on both sides of
+                        security, SOC alert
+                        triage (100+ SIEM alerts in Splunk and Microsoft Sentinel at 95% accuracy) and web application
+                        penetration testing
+                        (10+ validated vulnerabilities disclosed on HackerOne and Bugcrowd). Builds Python automation
+                        and ML-assisted
+                        detection tools. Top 2% globally on TryHackMe.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="assets/Rohit_Maity_Resume.pdf" download class="btn-primary">
+                            <span>Resume</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </a>
+                        <a href="#projects" class="btn-secondary">Explore Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCROLL DOWN INDICATOR -->
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">ACADEMICS</span>
+                    <h2>Education</h2>
+                </div>
+
+                <div class="timeline-list">
+                    <article class="glass-card timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Completed 2026</span>
+                            <span class="badge">Postgraduate</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>M.Sc. in Cybersecurity</h3>
+                            <p class="subtitle">Amity University Rajasthan &bull; CGPA: 8.21/10</p>
+                            <p>Advanced coursework and hands-on training focusing on SOC alert triage, threat intelligence, automated malware analysis, and offensive web application security methodologies.</p>
+                        </div>
+                    </article>
+
+                    <article class="glass-card timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Completed 2024</span>
+                            <span class="badge">Undergraduate</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>BCA, Specialization in Cybersecurity</h3>
+                            <p class="subtitle">JECRC University &bull; CGPA: 8.28/10</p>
+                            <p>Rigorous foundational grounding in computer networks, operating systems, security principles, and core software engineering structures.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATES & CREDENTIALS SECTION -->
+        <section id="certs" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">VERIFIED EXPERTISE</span>
+                    <h2>Certificates &amp; Credentials</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <article class="glass-card project-card reveal">
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>EC-Council</span>
+                                <span>Valid thru 2026</span>
+                            </div>
+                            <h3>Certified Ethical Hacker <br> (CEH v12)</h3>
+                            <p>Advanced ethical hacking and penetration testing methodology certification administered by EC-Council.</p>
+                            <a href="assets/certificates/CEH.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View Certificate
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card reveal">
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>EC-Council</span>
+                                <span>Network Defense</span>
+                            </div>
+                            <h3>Certified Network Defender (CND)</h3>
+                            <p>Comprehensive network security, perimeter defense, and traffic monitoring credential.</p>
+                            <a href="assets/certificates/CND.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View Certificate
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card reveal">
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>EC-Council</span>
+                                <span>Security Specialist</span>
+                            </div>
+                            <h3>EC-Council Certified Security Specialist v9 (ECSS v9)</h3>
+                            <p>Foundational security concepts spanning network, application, and endpoint protection.</p>
+                            <a href="assets/certificates/ECSS.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View Certificate
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card reveal">
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>Google</span>
+                                <span>Python3</span>
+                            </div>
+                            <h3>Crash Course on Python</h3>
+                            <p>Core programming fundamentals and automation scripting authorized by Google.</p>
+                            <a href="assets/certificates/Google python.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View Certificate
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+                
+                    <article class="glass-card project-card reveal">
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>Mastercard</span>
+                                <span>Job Simulation</span>
+                            </div>
+                            <h3>Cybersecurity Job Simulation</h3>
+                            <p>Practical task execution in designing phishing simulations and interpreting threat results.</p>
+                            <a href="assets/certificates/Mastercard.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View Certificate
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card reveal">
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>TryHackMe</span>
+                                <span>Learning Path</span>
+                            </div>
+                            <h3>Introduction to Cyber Security</h3>
+                            <p>Hands-on offensive and defensive foundational learning path completion.</p>
+                            <a href="assets/certificates/Intro to cyber.jpg" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View Certificate
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENTS SECTION -->
+        <section id="events" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">ATTENDED EVENTS</span>
+                    <h2>Events</h2>
+                </div>
+
+                <div class="timeline-list">
+                    <article class="glass-card timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Hacktoberfest</span>
+                            <span class="badge">By GitHub</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Hacktoberfest 2023</h3>
+                            <p class="subtitle">Software Engineering, Open-Source Contribution, Yearly Event</p>
+                            <ul class="clean-list">
+                                <li>Contributed verified pull requests to open-source repositories, demonstrating collaborative Git/GitHub workflows, code debugging, and community software development.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="glass-card timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Workshop</span>
+                            <span class="badge">By Cyberous</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Mastering Ethical Hacking &amp; Bug Bounty - A Hands-on</h3>
+                            <p class="subtitle">Web Security, Vulnerability Assessment, Workshop</p>
+                            <ul class="clean-list">
+                                <li>Executed practical web application penetration testing and bug bounty methodologies-including reconnaissance, vulnerability discovery, and exploitation of OWASP Top 10 flaws-alongside professional vulnerability reporting.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERNSHIPS SECTION -->
+        <section id="internships" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">FIELD EXPERIENCE</span>
+                    <h2>Internships</h2>
+                </div>
+
+                <div class="timeline-list">
+                    <article class="glass-card timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">SOC Intern</span>
+                            <span class="badge">TechnoHacks Pvt. Ltd</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>SOC L1 Intern</h3>
+                            <p class="subtitle">Security Monitoring, Security Analyst &amp; Incident Analysis</p>
+                            <ul class="clean-list">
+                                <li>Triaged 100+ SIEM alerts in Splunk and Microsoft Sentinel at 95% true/false-positive accuracy; escalated validated incidents to L2 with documented evidence.</li>
+                                <li>Analyzed 50+ phishing emails, extracting headers, URLs and file artifacts to generate IOC blocklists for perimeter firewalls.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="glass-card timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Cybersecurity Intern</span>
+                            <span class="badge">InlighnTechX Global Pvt. Ltd.</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Cybersecurity and Tools Development Intern</h3>
+                            <p class="subtitle">Security Tools, Security Analyst &amp; Python3</p>
+                            <ul class="clean-list">
+                                <li>Built 4 Python automation modules for network scanning and subdomain enumeration, reducing manual reconnaissance effort during vulnerability assessments.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="glass-card timeline-item reveal">
+                        <div class="timeline-meta">
+                            <span class="date">Cybersecurity Intern</span>
+                            <span class="badge">Null-Class Pvt. Ltd.</span>
+                        </div>
+                        <div class="timeline-body">
+                            <h3>Cybersecurity Intern</h3>
+                            <p class="subtitle">Security Monitoring, Security Analyst &amp; Incident Analysis</p>
+                            <ul class="clean-list">
+                                <li>Conducted an end-to-end black-box penetration test (enumeration, exploitation, privilege escalation) on a simulated enterprise Linux target and authored a remediation report.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">DEVELOPMENT</span>
+                    <h2>Security Projects</h2>
+                </div>
+
+                <div class="cards-grid">
+                    <article class="glass-card project-card reveal">
+                        <div class="media-container">
+                            <img src="assets/siem-preview.jpg" alt="ML-Driven SIEM Toolkit Interface" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>SIEM</span>
+                            </div>
+                            <h3>ML-Based SOC Anomaly Detection Model</h3>
+                            <p>Autoencoder-based anomaly detection on Syslog and Windows Event Logs with F1-score evaluation, a real-time dashboard and AI-assisted Sigma rule generation.</p>
+                            <a href="https://github.com/yourusername/ml-siem-toolkit" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card reveal">
+                        <div class="media-container">
+                            <img src="assets/siem-preview.jpg" alt="Homomorphic Chat System" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>Python3</span>
+                                <span>Cryptography</span>
+                                <span>Homomorphic</span>
+                            </div>
+                            <h3>Homomorphic Based Chat System</h3>
+                            <p>Designed and implemented a privacy-preserving chat architecture utilizing Fully Homomorphic Encryption (FHE) to enable secure end-to-end encrypted messaging.</p>
+                            <a href="https://github.com/yourusername/homomorphic-chat" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card reveal">
+                        <div class="media-container">
+                            <video src="assets/malware-demo.mp4" poster="assets/malware-poster.jpg" muted loop playsinline onmouseover="this.play()" onmouseout="this.pause()"></video>
+                        </div>
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>Static Analysis</span>
+                                <span>Threat Intel</span>
+                                <span>Python</span>
+                            </div>
+                            <h3>Static Malware Analyzer</h3>
+                            <p>Flask app that parses PE headers and the Import Address Table, flags packed files via entropy analysis, and produces a 0–100 risk score.</p>
+                            <a href="https://github.com/yourusername/static-malware-analyzer" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card reveal">
+                        <div class="media-container">
+                            <img src="assets/phishing-preview.jpg" alt="Phishing Email Detector" loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <div class="tag-row">
+                                <span>OAuth 2.0</span>
+                                <span>Email Security</span>
+                                <span>SOC</span>
+                            </div>
+                            <h3>Phishing Email Detector</h3>
+                            <p>Gmail API (OAuth 2.0) desktop app automating SPF, DKIM and DMARC checks, homograph detection, attachment risk scoring and real-time URL reputation lookups.</p>
+                            <a href="https://github.com/yourusername/phishing-analyzer" target="_blank" rel="noopener noreferrer" class="card-link">
+                                View
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOGS SECTION -->
+        <section id="blogs" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="eyebrow">WRITING &amp; RESEARCH</span>
+                    <h2>Technical Articles</h2>
+                </div>
+
+                <div class="blog-grid">
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="glass-card blog-card reveal">
+                        <div class="blog-top">
+                            <span class="platform">LinkedIn Article</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                        <h3>𝗛𝗼𝘄 𝗔𝗜 𝗔𝗴𝗲𝗻𝘁𝘀 𝗔𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗪𝗼𝗿𝗸 𝗮𝘁 𝘁𝗵𝗲 𝗟𝗼𝘄 𝗟𝗲𝘃𝗲𝗹</h3>
+                        <p>Authored an educational deep-dive examining internal mechanics of autonomous AI agents, breaking down prompt construction and state persistence loops.</p>
+                    </a>
+
+                    <a href="https://medium.com/@yourprofile" target="_blank" rel="noopener noreferrer" class="glass-card blog-card reveal">
+                        <div class="blog-top">
+                            <span class="platform">Medium</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                        <h3>Understanding HTTP Parameter Pollution</h3>
+                        <p>Analyzed how discrepancies in URL query string parsing between front-end WAFs and back-end frameworks allow attackers to bypass security filters.</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="glass-card blog-card reveal">
+                        <div class="blog-top">
+                            <span class="platform">LinkedIn Article</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                        </div>
+                        <h3>𝗧𝗵𝗲 𝗰𝗹𝗮𝘀𝘀𝗶𝗰 𝗯𝗲𝗴𝗶𝗻𝗻𝗲𝗿 𝗺𝗶𝘀𝘁𝗮𝗸𝗲 𝗶𝗻 𝗕𝘂𝗴 𝗕𝗼𝘂𝗻𝘁𝘆: 𝗧𝗿𝗶𝗴𝗴𝗲𝗿𝗶𝗻𝗴 𝘁𝗵𝗲 𝗪𝗔𝗙</h3>
+                        <p>Detailed stealth reconnaissance strategies using manual request pacing and custom header obfuscation to maintain low noise-to-signal ratios.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> Rohit Maity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
