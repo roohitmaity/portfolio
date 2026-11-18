@@ -691,9 +691,10 @@ body {
 }
 
 /* =========================================
-   10. RESPONSIVE BREAKPOINTS
+   10. RESPONSIVE BREAKPOINTS & MOBILE FIXES
    ========================================= */
-@media (max-width: 860px) {
+
+@media (max-width: 960px) {
     .hero-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -722,12 +723,13 @@ body {
     .timeline-item {
         grid-template-columns: 1fr;
         gap: 12px;
+        padding: 20px;
     }
 }
 
 @media (max-width: 680px) {
-    .menu-toggle {
-        display: flex;
+    .navbar {
+        padding: 0 16px;
     }
 
     .nav-links {
@@ -737,15 +739,38 @@ body {
         width: 100%;
         background: var(--bg-surface);
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
-        padding: 28px 24px;
-        gap: 20px;
+        padding: 24px;
+        gap: 16px;
         border-bottom: 1px solid var(--border-subtle);
         transform: translateY(-130%);
         transition: transform 0.35s var(--transition-smooth);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
     }
 
     .nav-links.open {
         transform: translateY(0);
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Force cards to single column on mobile */
+    .cards-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding-top: calc(var(--nav-height) + 20px);
+        padding-bottom: 80px;
     }
 }
